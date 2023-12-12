@@ -1,0 +1,113 @@
+    @keyframes slideInLeft {
+  from {
+    transform: scale(0.8, 0.8);
+    opacity: 0;
+  }
+  to {
+    transform: matrix(0);
+    opacity: 1;
+  }
+}
+
+  .container2{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%; /* Puedes ajustar este valor según tus necesidades */
+  margin: 0 auto;
+  }
+
+.container{
+  animation: slideInLeft 0.5s ease-in-out;
+  width: 15em;
+   overflow: hidden; /* Oculta el contenido que se desborda del contenedor */
+  text-overflow: ellipsis; /* Muestra puntos suspensivos (...) cuando el texto se desborda */
+  height: 18em;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 0.8em;
+  margin: 0.5em;
+  margin-top: 1em;
+  padding-bottom: 0.3em;
+  padding-top: 0.5em;
+  /* margin-bottom: -0.8em */; /* para que no haga scroll veertical */
+  overflow: hidden;
+  transform: scale(var(--escala, 1));
+  transition: transform 0.25s;
+  @media  screen and (max-width: 600px){
+    margin: 0.8em;
+    height: 29em;
+    width: 15em;
+  }
+}
+
+.container:hover{
+  cursor: pointer;
+  --escala: 1.1;
+}
+
+.nombres{
+  color: rgb(241, 223, 56);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  font-size: 1.7em;
+
+  -webkit-text-stroke: 0.03em black;
+  @media  screen and (max-width: 600px){
+    font-size: medium;
+    margin-top: -2em;
+    margin-left: -7em;
+    -webkit-text-stroke: 0.04em black;
+  }
+}
+
+.descriptionOrigin{
+  color: rgb(207, 198, 118);
+  font-size: larger;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 4em;
+   @media  screen and (max-width: 600px){
+    font-size: medium;
+  }
+}
+
+.image{
+  border-radius: 0.8em;
+  max-width: 15em;
+  max-height: 8em;
+  align-items: center;
+  @media  screen and (max-width: 600px){
+    height: 14em;
+    width: 14em;
+  }
+}
+
+.btn {
+  margin-right: 0.5em;
+  margin-left: 1em;
+  float: right;
+  color: #f0f0f0a9;
+  background-color: rgb(44, 12, 12);
+  border-radius: 1em;
+  height: 2em;
+  width: 10em;
+  transform: scale(var(--escala, 1));
+  font-size: medium;
+}
+
+.btn:hover {
+  cursor: pointer;
+  --escala: 1.1;
+    color: rgb(0, 0, 0);
+  background-color: #c0c0c0;
+}
+
+.containerBar{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 3.5em;
+  display: flex; /* Activa el modelo de caja flexible */
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  align-items: center; /* Centra verticalmente los elementos */
+}

@@ -1,0 +1,36 @@
+.divBackGround {
+  background-image: url(../../img/pikachu\ y\ sus\ amigos.png);
+  background-position: 13em -4.3em;
+}
+.containerTexto {
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+
+  background-color: rgba(0, 0, 0, 0.74);
+  height: 31.23em;
+  padding: 2em;
+  width: 50%;
+}
+.titulo {
+  font-size: 3em;
+  color: coral;
+  background-color: rgba(0, 0, 0);
+}
+.description {
+  font-size: 1.77em;
+  color: rgb(214, 196, 27);
+}
+.img {
+  flex-wrap: wrap;
+  float: right;
+  width: 14em;
+  margin-right: 15%;
+  margin-top: 9em;
+}
+
+.id {
+  font-size: xx-small;
+  color: rgb(214, 196, 27);
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
